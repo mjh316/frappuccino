@@ -92,7 +92,7 @@ const sequences = [
     duration: 1500,
   },
   {
-    text: "The land of Japan would face the invocation of the west.",
+    text: "The land of Japan would face the invocation of the west, and the samurai would be no more.",
     duration: 2000,
     fadeOut: true,
   },
