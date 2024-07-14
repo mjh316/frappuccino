@@ -11,3 +11,18 @@
     padding: 10px;
     cursor: pointer;
 }
+
+#goBackHome {
+    all: unset;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: rgb(255, 122, 0);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}

@@ -11,23 +11,48 @@
       AFRAME.registerComponent("button", {
         init() {
           const btn = document.getElementById("myButton");
-          btn.addEventListener("click", () => {
-            // window.open("https://google.com", "_blank");
-            alert("Hello, World!");
-          });
+          //   btn.addEventListener("click", () => {
+          // window.open("https://google.com", "_blank");
+          // alert("Hello, World!");
+          //   });
         },
       });
+
+      //   AFRAME.registerComponent("button", {
+      //     init() {
+      //       const btn = document.getElementById("goBackHome");
+      //       btn.addEventListener("click", () => {
+      //         // window.open("https://google.com", "_blank");
+      //         // alert("Hello, World!");
+      //       });
+      //     },
+      //   });
     </script>
   </head>
   <body>
-    <audio autoplay>
+    <audio id="myAudio">
       <source src="bg.mp3" type="audio/mpeg" />
     </audio>
+    <audio id="myAudio2">
+      <source src="japan.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="myAudio3">
+      <source src="pyramid.mp3" type="audio/mpeg" />
+    </audio>
     <a-scene>
-      <a-entity environment="preset: starry"></a-entity>
+      <!-- <a-entity id="cameraWrapper" position="0 0 0">
+        <a-camera></a-camera>
+      </a-entity> -->
+      <a-entity id="environment" environment="preset: starry"></a-entity>
       <a-entity id="narration" position="0 2 -1" text="value: "></a-entity>
     </a-scene>
     <script src="script.js"></script>
     <button onclick="startExperience()" id="myButton">Start Experience</button>
+    <!-- <button
+      onclick="document.querySelector('#cameraWrapper').object3D.position.set(0, 0, 0);"
+      id="goBackHome"
+    >
+      Go back to text position
+    </button> -->
   </body>
 </html>
