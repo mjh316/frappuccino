@@ -141,7 +141,7 @@ async function addLetter() {
         })
       );
       //   console.log(JSON.stringify(narrate.getAttribute("text"), null, 2));
-      await new Promise((resolve) => setTimeout(resolve, 5));
+      await new Promise((resolve) => setTimeout(resolve, 50));
     }
     if (seq.fadeOut) {
       aud_fade(curAudio);
