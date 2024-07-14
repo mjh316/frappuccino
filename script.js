@@ -104,7 +104,7 @@ let sceneToMusic = {
 };
 let curAudio = "";
 
-const DEBUG = true;
+const DEBUG = false;
 
 var timer;
 function aud_fade(audioID) {
